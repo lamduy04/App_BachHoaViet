@@ -1,0 +1,1 @@
+ F:\\ecom_startup_code\\client_side\\admin_panal_startup\\.dart_tool\\flutter_build\\1c3d31dd05f60632675a7c9aa88dbff2\\native_assets.yaml: 

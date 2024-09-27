@@ -1,0 +1,33 @@
+Để có thể load ảnh thì cần máy android thật và máy tính đang chạy cùng wifi đồng bộ ngay từ đầu
+
+1. sửa ở admin_panal_starup và flutter_ecommerce_start
+	/lib/utility/constants.dart
+	const MAIN_URL = 'http://192.168.24.101:3000';
+
+Thành địa chỉ ip của máy đang sử dụng (dùng cmd gõ lệnh ipconfig lấy ipv4)
+máy android thật sửa thành Ví dụ: 'http://192.168.24.101:3000'
+
+- Bên flutter_ecommerce_start
+- Nếu dùng máy ảo thì để nguyên http://10.0.2.2:3000'
+máy thật thì cài giống bên admin_panal_starup Ví dụ: 'http://192.168.24.101:3000'
+
+2. Bên server_side/online_store_api
+- Sửa url tương tự
+	route/category.js dòng 51 và 99
+	route/poster.js dòng 49 và 97
+	route/product.js dòng 84 và 149
+
+- Trong file .env sửa
+	MONGO_URL='link mongo của mình'
+
+- Lệnh chạy
+	npm i
+	npm i express
+	npm i body-parser
+
+	node index.js
+
+
+
+- Link cài sdk flutter
+- git clone https://github.com/flutter/flutter.git -b stable
